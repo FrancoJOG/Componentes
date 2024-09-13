@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider con Bootstrap</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-caption {
+      position: static;
+      color: white;
+      text-align: left;
+    }
+    .carousel-item {
+      background-color: #3C3244; /* color de fondo */
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+    .carousel-item img {
+      max-width: 200px; /* ajusta el tamaño de la imagen */
+    }
+    .carousel-indicators li {
+      width: 12px;
+      height: 12px;
+      background-color: #777;
+      border-radius: 50%; /* Hace que los indicadores sean redondos */
+    }
+    .carousel-indicators .active {
+      background-color: #fff; /* Color de fondo del indicador activo */
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-size: 100%, 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="customCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#customCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#customCarousel" data-slide-to="1"></li>
+    <li data-target="#customCarousel" data-slide-to="2"></li>
+  </ol>
+  
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="carousel-caption">
+            <h3>Nuestra misión es ofrecer soluciones de desarrollo altamente personalizadas y de alta calidad que impulsen el crecimiento y el éxito de nuestros clientes.</h3>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="gato-removebg-preview.png" alt="Imagen 1" class="d-block mx-auto">
+        </div>
+      </div>
+      <!-- Botones de control dentro del slide -->
+      <a class="carousel-control-prev" href="#customCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#customCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="carousel-caption">
+            <h3>Segunda diapositiva con una imagen diferente y otro texto.</h3>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="gato-removebg-preview.png" alt="Imagen 2" class="d-block mx-auto">
+        </div>
+      </div>
+      <!-- Botones de control dentro del slide -->
+      <a class="carousel-control-prev" href="#customCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#customCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="carousel-caption">
+            <h3>Tercera diapositiva con otra imagen y un texto diferente.</h3>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="gato-removebg-preview.png" alt="Imagen 3" class="d-block mx-auto">
+        </div>
+      </div>
+      <!-- Botones de control dentro del slide -->
+      <a class="carousel-control-prev" href="#customCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#customCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
